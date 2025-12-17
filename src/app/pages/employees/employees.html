@@ -1,0 +1,19 @@
+<p>employees works!</p>
+
+<div class="row">
+    <div class="col-sm-6">
+        <!-- form -->
+        @if (myEmployeeIsActive()) {
+        <app-employee-form />
+        }
+
+        <!-- list-name -->
+        @if(!myEmployeeIsActive()){
+        <app-employee-list-name />
+        }
+    </div>
+    <div class="col-sm-6">
+        <!-- <app-employee-details/> -->
+        <router-outlet />
+    </div>
+</div>

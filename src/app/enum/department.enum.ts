@@ -1,0 +1,22 @@
+export enum Department {
+    IT = 'IT',
+    HR = 'Human Resources',
+    FINANCE = 'Finance',
+    SALES = 'Sales',
+    MARKETING = 'Marketing',
+    ADMIN = 'Administration',
+    OPERATIONS = 'Operations',
+    CUSTOMER_SUPPORT = 'Customer Support',
+    QUALITY = 'Quality Assurance',
+    PRODUCT = 'Product Management',
+    DESIGN = 'Design / UI-UX',
+    FRONTENDDEVELOPER = 'Front End Developer',
+    BANKENDDEVELOPER = 'Front End Developer',
+    DATABASEDEVELOPER = 'Data Base Devloper',
+    TESTING = 'Testing / QA',
+    DATA = 'Data Analytics',
+    SECURITY = 'Cyber Security',
+    LEGAL = 'Legal',
+    PROCUREMENT = 'Procurement',
+    TRAINING = 'Training & Development'
+}

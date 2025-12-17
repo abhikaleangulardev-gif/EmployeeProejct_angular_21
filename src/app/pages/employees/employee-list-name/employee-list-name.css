@@ -1,0 +1,33 @@
+/* Remove default underline and make clickable */
+.employee-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  display: inline-block;
+  width: 100%;
+}
+
+.employee-link:hover {
+  color: #ffc107 !important;
+}
+
+/* List item styling */
+.list-group-item {
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+
+/* Card spacing */
+.card {
+  max-width: 570px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+.card-header h4 {
+  margin: 0;
+  font-weight: 600;
+}
