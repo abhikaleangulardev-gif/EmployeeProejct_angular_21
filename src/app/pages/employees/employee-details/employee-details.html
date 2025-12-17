@@ -1,0 +1,15 @@
+<div *ngIf="myEmployeeObj() as emp">
+  <div class="employee-card">
+    <img [src]="emp.employeeImage" alt="{{ emp.employeeName }}" class="employee-img" />
+    <div class="employee-details">
+      <h3>{{ emp.employeeName }}</h3>
+      <p>Email: {{ emp.employeeEmail }}</p>
+      <p>Contact: {{ emp.employeeContactNumber }}</p>
+      <p>Department: {{ emp.employeeDepartment }}</p>
+      <p>Designation: {{ emp.employeeDesignation }}</p>
+      <p>Salary: ₹{{ emp.employeeSalary | currency:"INR"}}</p>
+      <p>Address: {{ emp.employeeAddress.city }}, {{ emp.employeeAddress.state }}</p>
+      <p>Joining Date: {{ emp.employeeDateOfJoining | date:'mediumDate' }}</p>
+    </div>
+  </div>
+</div>

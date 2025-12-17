@@ -1,0 +1,13 @@
+<div class="card text-center">
+    <div class="card-header bg-dark d-flex justify-content-between">
+        <h4 class="text-warning">Employees Name List</h4>
+        <button class="btn btn-primary btn-sm" (click)="onNavigateEmployeeForm()">Add employee</button>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            @for (employee of myEmployeeArrayList(); track $index) {
+                <li class="list-group-item bg-secondary text-light mb-3"><a class="employee-link" (click)="onNavigateEmployeeDetails(employee)">{{employee.employeeName}}</a></li>
+            }
+        </ul>
+    </div>
+</div>
